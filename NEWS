@@ -1,0 +1,94 @@
+0.8.0
+=====
+- Translation updates: English (United Kingdom), Japanese, Korean, 
+  Dutch (Flemish), Portuguese (Brazilian), Romanian, Chinese (China).
+
+
+0.7.1
+=====
+- Translation updates: Greek, Finnish, Galician, Croatian, Japanese, 
+  Korean, Dutch (Flemish), Polish, Portuguese, Portuguese (Brazilian), 
+  Turkish.
+
+
+0.7.0
+=====
+- Show in correct settings category.
+- Drop AC_PROG_LIBTOOL/AC_DISABLE_STATIC for LT_PREREQ and LT_INIT.
+
+
+0.6.1
+=====
+- Do not make icon names translatable.
+- Auto generate the ChangeLog.
+- Translation updates (ar, be, bg, ca, cs, da, de, es, eu, fi, fr, gl,
+  hr, hu, id, is, it, ja, kk, ko, lt, nl, nn, pl, pt, pt_BR, ro,
+  ru, sk, sv, te, tr, uk, zh_CN, zh_TW).
+
+
+0.6.0
+=====
+- Use drive-removable-media icon for the desktop entry of 
+  thunar-volman-settings (bug #7079).
+- Updated translations: Turkish, Greek, Slovak, Swedish, 
+  English (United Kingdom), Japanese, Russian, Chinese, Czech.
+
+
+0.5.3
+=====
+- Drop LINGUAS (bug #6788).
+- Fix spelling error (use "a USB" instead of "an USB") (bug #6725).
+- Delay notification initialization until we show one.
+- Add checks for API change in libnotify 0.7.0.
+- New translations: Basque and Hungarian.
+
+
+0.5.2
+=====
+- Fix incompatibility with the icon naming specification (bug #6786).
+- Fix compilation without libnotify (bug #6607).
+- Add missing shebang to autogen.sh.
+- Add module.xml for cgit.
+- Remove deprecated enocding key from desktop files.
+- Translation updates: Japanese, Kazakh, Finnish, Russian, Italian,
+  Portuguese, Galician, French, German, Slovak, Ukrainian, Uyghur,
+  Danish, Catalan (Valencian).
+
+
+0.5.1
+=====
+- Fix a weird error with g_udev_device_get_devtype().
+- Remove D-Bus dependency.
+- Update dependencies in README.
+
+
+0.5.0
+=====
+- Complete rewrite based on udev/GIO instead of HAL.
+
+
+0.2.0
+=====
+- Properly ignore case looking for VCD, VIDEO_TS and DCIM folders (Bug #3038).
+- Do not try to automount if the volume does not contain a filesystem
+  (Bug #2789).
+- Install a .desktop file for the thunar-volman preferences (Bug #3225).
+- Updated translations: Maximilian Schleiss (fr)
+- New translations: Jeff Bailes (en_GB), Piarres Beobide (eu), Roberto Pariset
+                    (it), Rihards Priedītis (lv), Terje Uriansrud (nb_NO),
+                    Remco den Breeje (nl), Fábio Nogueira (pt_BR), Nuno Miguel
+                    (pt_PT), Besnik Bleta (sq), محمد علي المكي  (ur)
+
+
+0.1.2
+=====
+- New Pocket PC icon contributed by Eugenia Loli-Queru <eugenia@osnews.com>.
+- Updated translations: Maximilian Schleiss (fr)
+- New translations: Jari Rahkonen (fi), Szymon Kałasz (pl), Cheng-Wei
+                    Chien (zh_TW)
+
+
+0.1.0
+=====
+- Intial release of the volume management support package for Thunar, which
+  enables automatic management of removable drives and media.
