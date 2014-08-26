@@ -1,0 +1,21 @@
+diff -uNr thunar-volman-0.8.0/thunar-volman/tvm-block-device.c thunar-volman-0.8.0.patched/thunar-volman/tvm-block-device.c
+--- thunar-volman-0.8.0/thunar-volman/tvm-block-device.c	2012-04-28 22:18:31.000000000 +0200
++++ thunar-volman-0.8.0.patched/thunar-volman/tvm-block-device.c	2012-08-22 08:32:14.120339193 +0200
+@@ -514,7 +514,7 @@
+                         {
+                           /* prepare the command to autoopen */
+                           argv = g_new (gchar *, 3);
+-                          argv[0] = g_strdup ("Thunar");
++                          argv[0] = g_strdup ("exo-open --launch FileManager");
+                           argv[1] = path_autoopen;
+                           argv[2] = NULL;
+ 
+@@ -572,7 +572,7 @@
+   if (autobrowse) 
+     {
+       /* try to open the mount point in thunar */
+-      result = tvm_run_command (context, mount, "Thunar %m", &err);
++      result = tvm_run_command (context, mount, "exo-open --launch FileManager %m", &err);
+     }
+ 
+   /* forward errors to the caller */

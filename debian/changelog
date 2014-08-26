@@ -1,3 +1,10 @@
+thunar-volman (0.8.0-4ubuntu1+aurex1) trusty; urgency=medium
+
+  * Added patch to use 'exo-open --launch FileManager' to
+    remove inconditional use of thunar.
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Tue, 26 Aug 2014 10:08:21 +0200
+
 thunar-volman (0.8.0-4ubuntu1) trusty; urgency=medium
 
   * Fix auto-mounting of removable devices. LP: #1210898

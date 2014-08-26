@@ -514,7 +514,7 @@ tvm_block_device_autorun (TvmContext *context,
                         {
                           /* prepare the command to autoopen */
                           argv = g_new (gchar *, 3);
-                          argv[0] = g_strdup ("Thunar");
+                          argv[0] = g_strdup ("exo-open --launch FileManager");
                           argv[1] = path_autoopen;
                           argv[2] = NULL;
 
@@ -572,7 +572,7 @@ tvm_block_device_autobrowse (TvmContext *context,
   if (autobrowse) 
     {
       /* try to open the mount point in thunar */
-      result = tvm_run_command (context, mount, "Thunar %m", &err);
+      result = tvm_run_command (context, mount, "exo-open --launch FileManager %m", &err);
     }
 
   /* forward errors to the caller */
